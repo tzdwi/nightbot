@@ -19,7 +19,7 @@ trial_tweets = open('tweet_samples.txt','w+')
 #Generate 100 tweets
 for i in range(100):
     
-    tweet = nightbot.generate_text(13) # 13 seems to be a good number for these. Once we have more phrases it can get longer
+    tweet = nightbot._construct_tweet(prefix = 'We are Night Lunch and', suffix = '#NightLunch') # 13 seems to be a good number for these. Once we have more phrases it can get longer
     trial_tweets.write(tweet+'\n')
 
 trial_tweets.close()
